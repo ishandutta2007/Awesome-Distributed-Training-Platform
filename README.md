@@ -54,9 +54,9 @@ The table below lists leading managed commercial platforms for distributed deep 
 
 ## 💻 Open-Source GitHub Repositories
 
-The open-source ecosystem provides foundational libraries for distributed execution, cluster orchestration, model parallelization, and hyperparameter optimization. Repositories below are sorted by **GitHub Star Count** in descending order.
+The open-source ecosystem provides foundational libraries for distributed execution, cluster orchestration, model parallelization, and hyperparameter optimization. Repositories below are sorted by **GitHub Stars_Count** in descending order.
 
-| 📦 Repository & Project | ⭐ GitHub Popularity Star Badge | 🛠️ Primary Focus & Architecture | 📄 License |
+| 📦 Repository & Project | ⭐ GitHub Popularity Stars_Badge | 🛠️ Primary Focus & Architecture | 📄 License |
 | :--- | :--- | :--- | :--- |
 | **[vLLM](https://github.com/vllm-project/vllm)** | [![vLLM Stars](https://img.shields.to/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) | High-throughput, memory-efficient LLM serving and distributed multi-GPU inference engine featuring PagedAttention. | Apache-2.0 |
 | **[Ray](https://github.com/ray-project/ray)** | [![Ray Stars](https://img.shields.to/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers) | Universal distributed computing framework for Python; includes Ray Train, Ray Tune, and Ray Data powering OpenAI & Cohere workloads. | Apache-2.0 |
@@ -106,7 +106,7 @@ Contributions are welcome! Please follow these steps to add new tools or update 
 
 1. 🍴 **Fork the Repository**.
 2. ✍️ **Update Data**: Modify `README.md` maintaining table formatting, specific pricing rates, and verified free tier limits.
-3. 🔗 **Include Links**: Ensure GitHub repos include official star badges linking to the `/stargazers` page.
+3. 🔗 **Include Links**: Ensure GitHub repos include official Stars_Badges linking to the `/stargazers` page.
 4. 🚀 **Submit a Pull Request** with a clear title and brief rationale.
 
 ---
