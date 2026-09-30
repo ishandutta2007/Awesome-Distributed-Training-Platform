@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Animations for Dynamic Aspects */
+    @keyframes pulse-node {
+      0%, 100% { r: 6px; opacity: 0.6; filter: drop-shadow(0 0 4px #3b82f6); }
+      50% { r: 9px; opacity: 1; filter: drop-shadow(0 0 12px #8b5cf6); }
+    }
+
+    @keyframes dash-flow {
+      from { stroke-dashoffset: 100; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes float-pill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes bg-glow-pulse {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
+    }
+
+    .bg-shape {
+      transform-origin: center;
+      animation: bg-glow-pulse 8s ease-in-out infinite;
+    }
+
+    .node {
+      animation: pulse-node 3s ease-in-out infinite;
+    }
+
+    .node-delay-1 { animation-delay: 0.6s; }
+    .node-delay-2 { animation-delay: 1.2s; }
+    .node-delay-3 { animation-delay: 1.8s; }
+    .node-delay-4 { animation-delay: 2.4s; }
+
+    .data-stream {
+      stroke-dasharray: 12, 12;
+      animation: dash-flow 3s linear infinite;
+    }
+
+    .data-stream-reverse {
+      stroke-dasharray: 10, 10;
+      animation: dash-flow 4s linear infinite reverse;
+    }
+
+    .pill {
+      animation: float-pill 4s ease-in-out infinite;
+    }
+
+    .pill-delay-1 { animation-delay: 1.5s; }
+    .pill-delay-2 { animation-delay: 2.5s; }
+
+    /* Text Styles */
+    .banner-title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .banner-subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+
+    .pill-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="400" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Animated Glowing Background Orbs -->
+  <circle class="bg-shape" cx="200" cy="100" r="180" fill="url(#glow-grad)" opacity="0.25" />
+  <circle class="bg-shape" cx="1000" cy="300" r="220" fill="url(#glow-grad)" opacity="0.25" style="animation-delay: -4s;" />
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M0 50 H1200 M0 100 H1200 M0 150 H1200 M0 200 H1200 M0 250 H1200 M0 300 H1200 M0 350 H1200" />
+    <path d="M100 0 V400 M200 0 V400 M300 0 V400 M400 0 V400 M500 0 V400 M600 0 V400 M700 0 V400 M800 0 V400 M900 0 V400 M1000 0 V400 M1100 0 V400" />
+  </g>
+
+  <!-- Background Dynamic Network Mesh (GPU Cluster Topology) -->
+  <g opacity="0.35">
+    <!-- Connecting Line Streams -->
+    <line x1="150" y1="320" x2="350" y2="280" stroke="#3b82f6" stroke-width="2" class="data-stream" />
+    <line x1="350" y1="280" x2="550" y2="340" stroke="#8b5cf6" stroke-width="2" class="data-stream-reverse" />
+    <line x1="550" y1="340" x2="780" y2="290" stroke="#ec4899" stroke-width="2" class="data-stream" />
+    <line x1="780" y1="290" x2="1050" y2="330" stroke="#3b82f6" stroke-width="2" class="data-stream-reverse" />
+    <line x1="350" y1="280" x2="480" y2="210" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="780" y1="290" x2="920" y2="220" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4,4" />
+
+    <!-- Cluster Nodes -->
+    <circle cx="150" cy="320" r="7" fill="#60a5fa" class="node" />
+    <circle cx="350" cy="280" r="7" fill="#8b5cf6" class="node node-delay-1" />
+    <circle cx="550" cy="340" r="7" fill="#ec4899" class="node node-delay-2" />
+    <circle cx="780" cy="290" r="7" fill="#3b82f6" class="node node-delay-3" />
+    <circle cx="1050" cy="330" r="7" fill="#a855f7" class="node node-delay-4" />
+
+    <circle cx="480" cy="210" r="5" fill="#38bdf8" class="node node-delay-2" />
+    <circle cx="920" cy="220" r="5" fill="#f472b6" class="node node-delay-1" />
+  </g>
+
+  <!-- Dynamic Floating Tech Badge Pills (Positioned around borders to never obstruct central title) -->
+  <g class="pill" transform="translate(80, 50)">
+    <rect width="180" height="34" rx="17" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" opacity="0.9" />
+    <circle cx="18" cy="17" r="5" fill="#10b981" filter="url(#soft-glow)" />
+    <text x="32" y="22" class="pill-text">⚡ Multi-GPU Clusters</text>
+  </g>
+
+  <g class="pill pill-delay-1" transform="translate(930, 60)">
+    <rect width="190" height="34" rx="17" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" opacity="0.9" />
+    <circle cx="18" cy="17" r="5" fill="#6366f1" filter="url(#soft-glow)" />
+    <text x="32" y="22" class="pill-text">🚀 Distributed MLOps</text>
+  </g>
+
+  <g class="pill pill-delay-2" transform="translate(960, 240)">
+    <rect width="165" height="34" rx="17" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" opacity="0.9" />
+    <circle cx="18" cy="17" r="5" fill="#ec4899" filter="url(#soft-glow)" />
+    <text x="32" y="22" class="pill-text">🔥 Fault Tolerance</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Bar & Main Title/Subtitle (Rendered LAST for crisp readability) -->
+  <!-- Top Decorative Gradient Accent Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#primary-grad)" />
+
+  <!-- Main Center Header Group -->
+  <g transform="translate(60, 160)">
+    <!-- Small Category Tag -->
+    <rect x="0" y="0" width="220" height="26" rx="6" fill="url(#primary-grad)" opacity="0.2" />
+    <rect x="0" y="0" width="220" height="26" rx="6" fill="none" stroke="#60a5fa" stroke-width="1" />
+    <text x="12" y="17" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#60a5fa" letter-spacing="1">CURATED AI INFRASTRUCTURE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="75" class="banner-title" filter="url(#neon-glow)">
+      Awesome Distributed Training Platform
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="115" class="banner-subtitle">
+      Multi-GPU Orchestration • Cluster Scheduling • Fault-Tolerant Training • Open-Source &amp; Enterprise SaaS
+    </text>
+  </g>
+</svg>
