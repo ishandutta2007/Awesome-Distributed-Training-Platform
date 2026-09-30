@@ -2,9 +2,7 @@
 
 ![Awesome Distributed Training Platform Banner](assets/banner.svg)
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/badge.svg)](https://github.com/ishandutta2007/Awesome-Distributed-Training-Platform)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Distributed-Training-Platform/pulls)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/badge.svg)](https://github.com/ishandutta2007/Awesome-Distributed-Training-Platform) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Distributed-Training-Platform/pulls) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > **A curated, SEO-optimized list of top SaaS products, cloud platforms, and open-source GitHub projects for Large-Scale Distributed Deep Learning, LLM Fine-Tuning, Multi-GPU Orchestration, and Cluster Scheduling.**
 
@@ -16,7 +14,9 @@
 - [💻 Open-Source GitHub Repositories](#-open-source-github-repositories)
 - [🛠️ Distributed Training Framework Selection Matrix](#%EF%B8%8F-distributed-training-framework-selection-matrix)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [📜 Disclaimer](#-disclaimer)
+- [📈 Star History](#-star-history)
 
 ---
 
@@ -111,11 +111,33 @@ Contributions are welcome! Please follow these steps to add new tools or update 
 
 ---
 
+## 💖 Support & Sponsorship
+
+Thank you for exploring **Awesome Distributed Training Platform**! If you find this resource valuable for your AI projects, research, or infrastructure design, please consider showing your support:
+
+- ⭐ **Star this Repository**: Helps increase visibility for developers and researchers.
+- 🍴 **Fork & Share**: Share it with fellow ML engineers and platform teams.
+- ☕ **Sponsor the Developer**: Support ongoing maintenance and curated ecosystem updates via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
 ## 📜 Disclaimer
 
 - **Community Curated**: This repository is a community-maintained curated list and does not constitute an explicit endorsement of listed vendors.
 - **Compliance & Security**: Distributed training operations handling proprietary datasets or LLM weights must ensure adherence to data sovereignty regulations (GDPR, HIPAA, SOC 2) and cloud export controls.
 - **Infrastructure Overhead**: Self-hosted open-source clusters (e.g., Ray, Kubeflow, Determined) require active network engineering (RDMA/Infiniband setup, shared POSIX/S3 checkpoint stores) and security hardening.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Distributed-Training-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Distributed-Training-Platform&type=date&legend=top-left)
 
 ---
 
